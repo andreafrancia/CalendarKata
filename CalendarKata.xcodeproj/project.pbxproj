@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6563E2F5183B676600A22E3F /* Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6563E2F4183B676600A22E3F /* Calendar.m */; };
 		65758965183583B70092D099 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65758964183583B70092D099 /* Foundation.framework */; };
 		65758967183583B70092D099 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65758966183583B70092D099 /* CoreGraphics.framework */; };
 		65758969183583B70092D099 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65758968183583B70092D099 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6563E2F3183B676600A22E3F /* Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calendar.h; sourceTree = "<group>"; };
+		6563E2F4183B676600A22E3F /* Calendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calendar.m; sourceTree = "<group>"; };
 		65758961183583B70092D099 /* CalendarKata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarKata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65758964183583B70092D099 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65758966183583B70092D099 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,6 +122,8 @@
 				6575896B183583B70092D099 /* Supporting Files */,
 				65758999183584A60092D099 /* CalendarViewController.h */,
 				6575899A183584A60092D099 /* CalendarViewController.m */,
+				6563E2F3183B676600A22E3F /* Calendar.h */,
+				6563E2F4183B676600A22E3F /* Calendar.m */,
 			);
 			path = CalendarKata;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 				65758975183583B70092D099 /* AppDelegate.m in Sources */,
 				6575899B183584A60092D099 /* CalendarViewController.m in Sources */,
 				65758971183583B70092D099 /* main.m in Sources */,
+				6563E2F5183B676600A22E3F /* Calendar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +466,7 @@
 				65758995183583B70092D099 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65758996183583B70092D099 /* Build configuration list for PBXNativeTarget "CalendarKataTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +475,7 @@
 				65758998183583B70092D099 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface Calendar : NSObject
-
+-(NSInteger)numberOfRows;
+-(NSString*)textAtRow:(NSInteger)row;
 @end

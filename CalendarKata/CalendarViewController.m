@@ -7,12 +7,16 @@
 //
 
 #import "CalendarViewController.h"
+#import "Calendar.h"
 
-@implementation CalendarViewController
+@implementation CalendarViewController {
+    Calendar * _calendar;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _calendar = [[Calendar alloc]init];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -22,7 +26,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return [_calendar numberOfRows];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -30,7 +34,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     
     // Configure the cell...
-    cell.textLabel.text = @"giorno";
+    cell.textLabel.text = [_calendar textAtRow:indexPath.row];
     
     return cell;
 }

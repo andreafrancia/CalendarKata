@@ -10,4 +10,14 @@
 
 @implementation Calendar
 
+-(NSInteger)numberOfRows;
+{
+    return 2;
+}
+
+-(NSString*)textAtRow:(NSInteger)row;
+{
+    return @"giorno";
+}
+
 @end
